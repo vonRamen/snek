@@ -9,7 +9,7 @@ const connectionString = "mongodb://mongo:27017/";
 
 const client = new MongoClient(connectionString);
 const database = client.db("snek");
-const highscoreCollection = database.collection("highscores");
+const highscoreCollection = database.collection("highscores-kitchen");
 
 const app = express();
 app.use(express.json());
