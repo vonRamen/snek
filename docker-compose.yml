@@ -12,6 +12,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     networks:
       - backend
+    volumes:
+      - mongodbdata:/data/db
 
   highscore-server:
     build: Api/
