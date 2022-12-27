@@ -17,6 +17,8 @@ services:
     build: Api/
     image: vonramen/highscoreserver:latest
     restart: always
+    ports:
+      - "80:80"
     depends_on:
      - mongo
     networks:
