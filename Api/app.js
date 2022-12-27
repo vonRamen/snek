@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 let ObjectID = require('mongodb').ObjectId;
 const axios = require('axios');
 
-const connectionString = "mongodb://root:example@localhost:27017/?authMechanism=DEFAULT";
+const connectionString = "mongodb://root:example@mongo:27017/?authMechanism=DEFAULT";
 
 const client = new MongoClient(connectionString);
 const database = client.db("snek");
